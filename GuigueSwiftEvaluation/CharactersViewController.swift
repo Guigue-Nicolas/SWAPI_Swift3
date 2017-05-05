@@ -34,11 +34,7 @@ class CharactersViewController: UIViewController {
                         let oneCaracter = ["name": oneRow["name"], "gender": oneRow["gender"], "skin": oneRow["skin_color"], "eye": oneRow["eye_color"], "hair": oneRow["hair_color"]] // Création d'un Dictionnaire Contenant les données d'un Personnage.
                         self.Caracters.append(oneCaracter as NSDictionary) // Ajout d'un Personnage à ma liste des Personnages
                     }
-                    self.nameLabel.text = "\(self.Caracters[self.caracterID]["name"]!)"
-                    self.genderLabel.text = "\(self.Caracters[self.caracterID]["gender"]!)"
-                    self.skinLabel.text = "\(self.Caracters[self.caracterID]["skin"]!)"
-                    self.eyeLabel.text = "\(self.Caracters[self.caracterID]["eye"]!)"
-                    self.hairLabel.text = "\(self.Caracters[self.caracterID]["hair"]!)"
+                    self.reloadCaractersInfos()
                     //print(self.Caracters)
                 }
             }
@@ -51,11 +47,7 @@ class CharactersViewController: UIViewController {
         }else{
             self.caracterID = self.caracterID+1
         }
-        self.nameLabel.text = "\(self.Caracters[self.caracterID]["name"]!)"
-        self.genderLabel.text = "\(self.Caracters[self.caracterID]["gender"]!)"
-        self.skinLabel.text = "\(self.Caracters[self.caracterID]["skin"]!)"
-        self.eyeLabel.text = "\(self.Caracters[self.caracterID]["eye"]!)"
-        self.hairLabel.text = "\(self.Caracters[self.caracterID]["hair"]!)"
+        self.reloadCaractersInfos()
     }
     
     @IBAction func PrevButton(_ sender: UIButton) {
@@ -64,11 +56,20 @@ class CharactersViewController: UIViewController {
         }else{
             self.caracterID = self.caracterID-1
         }
+        self.reloadCaractersInfos()
+    }
+    
+    @IBAction func Exit(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
+    func reloadCaractersInfos(){
         self.nameLabel.text = "\(self.Caracters[self.caracterID]["name"]!)"
         self.genderLabel.text = "\(self.Caracters[self.caracterID]["gender"]!)"
         self.skinLabel.text = "\(self.Caracters[self.caracterID]["skin"]!)"
         self.eyeLabel.text = "\(self.Caracters[self.caracterID]["eye"]!)"
         self.hairLabel.text = "\(self.Caracters[self.caracterID]["hair"]!)"
+
     }
 
     override func didReceiveMemoryWarning() {

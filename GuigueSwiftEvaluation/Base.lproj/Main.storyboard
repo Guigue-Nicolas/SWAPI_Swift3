@@ -347,8 +347,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-63-eL3">
-                                                <rect key="frame" x="151" y="-7" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="159" y="-7" width="30" height="30"/>
+                                                <state key="normal" title="Exit"/>
+                                                <connections>
+                                                    <action selector="Exit:" destination="K7b-0g-Drb" eventType="touchUpInside" id="nRT-Fi-bUy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -358,7 +361,6 @@
                                             <constraint firstItem="Lq9-63-eL3" firstAttribute="centerY" secondItem="wd3-DW-8u9" secondAttribute="centerY" id="FGs-75-75q"/>
                                             <constraint firstAttribute="height" constant="50" id="GAw-V1-OsX"/>
                                             <constraint firstItem="wzh-Ld-fzZ" firstAttribute="centerY" secondItem="wd3-DW-8u9" secondAttribute="centerY" id="eSD-Zi-rOa"/>
-                                            <constraint firstItem="Lq9-63-eL3" firstAttribute="leading" secondItem="wzh-Ld-fzZ" secondAttribute="trailing" constant="10" id="hCO-vT-3Vc"/>
                                             <constraint firstAttribute="trailing" secondItem="9Dg-yS-Mxf" secondAttribute="trailing" constant="25" id="tRV-93-rkm"/>
                                         </constraints>
                                     </view>
@@ -525,6 +527,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="fTN-ng-pWI" secondAttribute="trailing" constant="50" id="I1Y-fC-Eiv"/>
                             <constraint firstItem="fTN-ng-pWI" firstAttribute="leading" secondItem="PWB-ZE-eHh" secondAttribute="leadingMargin" constant="50" id="K4w-dM-3MM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SbX-l2-1c2" secondAttribute="trailing" constant="-25" id="Rn2-Si-qy2"/>
+                            <constraint firstItem="Lq9-63-eL3" firstAttribute="centerX" secondItem="PWB-ZE-eHh" secondAttribute="centerX" id="T38-vQ-Pyr"/>
                             <constraint firstItem="EZi-ok-msa" firstAttribute="centerX" secondItem="PWB-ZE-eHh" secondAttribute="centerX" id="W8u-nN-yrL"/>
                             <constraint firstItem="fTN-ng-pWI" firstAttribute="top" secondItem="cZm-qp-5Wk" secondAttribute="bottom" constant="75" id="adV-Op-j6f"/>
                             <constraint firstItem="UPr-YU-tuP" firstAttribute="top" secondItem="SbX-l2-1c2" secondAttribute="bottom" constant="-25" id="z3Y-Ee-QJq"/>
