@@ -113,12 +113,20 @@
                                                     <action selector="PrevButton:" destination="sgl-F7-GMp" eventType="touchUpInside" id="csZ-zO-whv"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYq-nE-IRE">
+                                                <rect key="frame" x="96" y="8" width="30" height="30"/>
+                                                <state key="normal" title="Exit"/>
+                                                <connections>
+                                                    <action selector="Exit:" destination="sgl-F7-GMp" eventType="touchUpInside" id="32V-J5-iWD"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="5cW-5W-YmP" firstAttribute="centerY" secondItem="6Yw-fV-SLs" secondAttribute="centerY" id="F4t-Uo-6q5"/>
                                             <constraint firstAttribute="height" constant="50" id="NbS-iq-4T9"/>
                                             <constraint firstItem="1Qb-40-Qg2" firstAttribute="centerY" secondItem="6Yw-fV-SLs" secondAttribute="centerY" id="b2p-Mq-PDD"/>
+                                            <constraint firstItem="wYq-nE-IRE" firstAttribute="centerY" secondItem="1Qb-40-Qg2" secondAttribute="centerY" id="miX-DT-nQx"/>
                                             <constraint firstAttribute="trailing" secondItem="5cW-5W-YmP" secondAttribute="trailing" constant="25" id="niW-C2-xbe"/>
                                             <constraint firstItem="1Qb-40-Qg2" firstAttribute="leading" secondItem="6Yw-fV-SLs" secondAttribute="leading" constant="25" id="pkQ-zb-ke8"/>
                                         </constraints>
@@ -286,6 +294,7 @@
                             <constraint firstItem="KMU-bD-Xm2" firstAttribute="top" secondItem="oRC-FA-vGU" secondAttribute="bottom" constant="75" id="hld-aC-ygq"/>
                             <constraint firstItem="0CE-tV-4gC" firstAttribute="top" secondItem="oRC-FA-vGU" secondAttribute="bottom" constant="-25" id="i3l-h4-7ZM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KMU-bD-Xm2" secondAttribute="trailing" constant="50" id="kRQ-3S-xez"/>
+                            <constraint firstItem="wYq-nE-IRE" firstAttribute="centerX" secondItem="hEI-oj-Xxr" secondAttribute="centerX" id="m4k-Lr-HQn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0CE-tV-4gC" secondAttribute="trailing" constant="-25" id="oC0-a9-5PX"/>
                             <constraint firstItem="KMU-bD-Xm2" firstAttribute="leading" secondItem="hEI-oj-Xxr" secondAttribute="leadingMargin" constant="50" id="pIc-2z-ouY"/>
                             <constraint firstItem="2iU-Va-S5W" firstAttribute="top" secondItem="0CE-tV-4gC" secondAttribute="bottom" constant="-25" id="ppL-9d-k4Z"/>

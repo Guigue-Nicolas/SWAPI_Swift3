@@ -349,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18B91440AD70BFE828357ED9 /* Pods-GuigueSwiftEvaluation.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GuigueSwiftEvaluation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -362,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 255494F37C4BE3598DCD8275 /* Pods-GuigueSwiftEvaluation.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GuigueSwiftEvaluation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

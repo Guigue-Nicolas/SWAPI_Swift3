@@ -44,6 +44,10 @@ class SpeciesViewController: UIViewController {
         }
     }
     
+    @IBAction func Exit(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
     @IBAction func NextButton(_ sender: UIButton) {
         if self.speciesID == self.Species.count - 1 {
             self.speciesID = 0
